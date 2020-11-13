@@ -8,6 +8,7 @@ import PrivateRoute from './components/PrivateRoute'
 import NotFound from './containers/NotFound'
 import Home from './containers/Home'
 import Login from './containers/Login'
+import Register from './containers/Register'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Switch>
         <PrivateRoute exact={true} path={ROUTES.HOME} component={Home} />
         <Route exact={true} path={ROUTES.LOGIN} component={Login} />
+        <Route exact={true} path={ROUTES.REGISTER} component={Register} />
         <Route component={NotFound} />
       </Switch>
     </Router>

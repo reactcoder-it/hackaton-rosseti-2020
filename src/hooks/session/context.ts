@@ -1,9 +1,8 @@
 import { createContext, useContext } from 'react'
-import app from 'firebase/app'
 
-type User = app.User
+import { Session } from './types'
 
-const SessionContext = createContext<User | null>(null)
+const SessionContext = createContext<Session | null>(null)
 const useSession = () => useContext(SessionContext)
 
 export { SessionContext, useSession }
