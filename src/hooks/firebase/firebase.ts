@@ -4,6 +4,7 @@ import 'firebase/auth'
 import { config } from './config'
 
 export type Auth = app.auth.Auth
+export type User = app.User | null
 
 export default class Firebase {
   constructor() {

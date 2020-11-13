@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Firebase, { FirebaseContext } from './firebase'
+import Firebase, { FirebaseContext } from './hooks/firebase'
 import App from './App'
 
 import './index.css'
