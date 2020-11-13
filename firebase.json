@@ -1,0 +1,12 @@
+{
+    "hosting": {
+        "site": "digital-substation-5b8e9",
+        "public": "build",
+        "rewrites": [
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ]
+    }
+}
