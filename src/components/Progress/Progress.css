@@ -1,0 +1,16 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 16px;
+}
+
+.progress__rate {
+  display: flex;
+  line-height: 32px;
+}
+
+.progress h2 {
+  margin: 0;
+  margin-right: 32px;
+}

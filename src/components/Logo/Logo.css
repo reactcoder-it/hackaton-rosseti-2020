@@ -1,0 +1,19 @@
+.logo {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 32px;
+}
+
+.logo__main {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.logo__text {
+  margin: 0;
+  line-height: 32px;
+}

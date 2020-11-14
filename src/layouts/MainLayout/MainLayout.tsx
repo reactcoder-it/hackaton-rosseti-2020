@@ -5,8 +5,10 @@ import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons'
 
 import UserProfile from '../../components/UserProfile'
 import Navigation from '../../components/Navigation'
+import Progress from '../../components/Progress'
 
 import './MainLayout.css'
+import Logo from '../../components/Logo'
 
 const { Header, Sider, Content } = Layout
 
@@ -30,6 +32,10 @@ const MainLayout: FC = ({ children }) => {
               className: 'trigger',
               onClick: toggle,
             })}
+            <div className="main-layout__header-container">
+              <Progress />
+              <Logo />
+            </div>
           </Header>
           <Content className="main-layout__content">{children}</Content>
         </Layout>

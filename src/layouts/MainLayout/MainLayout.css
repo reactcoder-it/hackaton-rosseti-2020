@@ -6,6 +6,10 @@
   height: 100%;
 }
 
+.main-layout .ant-layout-header {
+  height: 124px !important;
+}
+
 .main-layout .trigger {
   font-size: 18px;
   line-height: 64px;
@@ -18,18 +22,19 @@
   color: #1890ff;
 }
 
-.main-layout .logo {
-  height: 32px;
-  background: rgba(255, 255, 255, 0.3);
-  margin: 16px;
-}
-
 .main-layout__header {
   background: #f0f2f5 !important;
   padding: 0 !important;
+  display: flex;
 }
 
 .main-layout__content {
   background: #ffffff !important;
   padding: 16px;
+}
+
+.main-layout__header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
