@@ -8,7 +8,7 @@ import './DeviceSelection.css'
 const { SubMenu } = Menu
 
 interface DeviceSelectionProps {
-  onAddNewDevice: () => void
+  onAddNewDevice: (name: string, position: { x: number; y: number }) => void
 }
 
 const DeviceSelection: FC<DeviceSelectionProps> = ({ onAddNewDevice }) => {
@@ -44,6 +44,13 @@ const DeviceSelection: FC<DeviceSelectionProps> = ({ onAddNewDevice }) => {
     setDeviceSelection(document.getElementById('device-selection'))
   }, [])
 
+  const handleAddNewDevice = (name: string) => () => {
+    const x = trainer && deviceSelection ? trainer.offsetWidth / 2 - 150 : 0
+    const y = trainer && deviceSelection ? trainer.clientHeight / 2 : 0
+
+    onAddNewDevice(name, { x, y })
+  }
+
   return (
     <Draggable position={position} onStop={handleStop}>
       <div className="device-selection" id="device-selection">
@@ -55,14 +62,14 @@ const DeviceSelection: FC<DeviceSelectionProps> = ({ onAddNewDevice }) => {
             className="device-selection__menu"
           >
             <SubMenu key="sub1" icon={<AppstoreOutlined />} title="РЗА">
-              <Menu.Item onClick={onAddNewDevice} key="1">
-                Устройство 1
+              <Menu.Item onClick={handleAddNewDevice('Устройство типа A')} key="1">
+                Устройство типа A
               </Menu.Item>
-              <Menu.Item onClick={onAddNewDevice} key="2">
-                Устройство 2
+              <Menu.Item onClick={handleAddNewDevice('Устройство типа B')} key="2">
+                Устройство типа B
               </Menu.Item>
-              <Menu.Item onClick={onAddNewDevice} key="3">
-                Устройство 3
+              <Menu.Item onClick={handleAddNewDevice('Устройство типа C')} key="3">
+                Устройство типа C
               </Menu.Item>
             </SubMenu>
             <SubMenu key="sub2" icon={<ClusterOutlined />} title="Промышленные коммутаторы">

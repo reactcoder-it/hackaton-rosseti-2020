@@ -7,6 +7,7 @@ import './Trainer.css'
 
 export interface DeviceInfo {
   id: number
+  name: string
   position: { x: number; y: number }
   options: DeviceOptions
 }
@@ -26,10 +27,11 @@ const Trainer = () => {
   const [devices, setDevices] = useState<DeviceInfo[]>([])
   const [count, setCount] = useState<number>(0)
 
-  const handleAddNewDevice = () => {
+  const handleAddNewDevice = (name: string, position: { x: number; y: number }) => {
     const newDevice: DeviceInfo = {
       id: count,
-      position: { x: 200, y: 200 },
+      name,
+      position,
       options: {
         IP: '',
         GCB_NAME: '',

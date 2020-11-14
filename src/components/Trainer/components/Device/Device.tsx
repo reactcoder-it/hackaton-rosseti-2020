@@ -9,7 +9,7 @@ interface DeviceProps extends DeviceInfo {
   onUpdateDevice: (device: DeviceInfo) => void
 }
 
-const Device: FC<DeviceProps> = ({ id, position, options, onUpdateDevice }) => {
+const Device: FC<DeviceProps> = ({ id, name, position, options, onUpdateDevice }) => {
   const handleStop = (e: DraggableEvent, data: DraggableData) => {
     const maxX = trainer && device ? trainer.offsetWidth - device.offsetWidth - 16 : 0
     const maxY = trainer && device ? trainer.clientHeight - device.clientHeight - 16 : 0
@@ -28,7 +28,7 @@ const Device: FC<DeviceProps> = ({ id, position, options, onUpdateDevice }) => {
       newPosition.y = maxY
     }
 
-    onUpdateDevice({ id, position: newPosition, options })
+    onUpdateDevice({ id, name, position: newPosition, options })
   }
 
   const [trainer, setTrainer] = useState<HTMLElement | null>()
@@ -42,7 +42,7 @@ const Device: FC<DeviceProps> = ({ id, position, options, onUpdateDevice }) => {
   return (
     <Draggable position={position} onStop={handleStop}>
       <div className="device" id={`device-${id}`}>
-        <Card title="Устройство" style={{ width: 300 }} className="device__card">
+        <Card title={name} style={{ width: 300 }} className="device__card">
           <Button>Настройка</Button>
         </Card>
       </div>
