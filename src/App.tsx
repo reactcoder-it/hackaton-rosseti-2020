@@ -10,6 +10,7 @@ import Home from './containers/Home'
 import Login from './containers/Login'
 import Register from './containers/Register'
 import Task from './containers/Task'
+import Tasks from './containers/Tasks'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Switch>
         <PrivateRoute exact={true} path={ROUTES.HOME} component={Home} />
         <PrivateRoute exact={true} path={ROUTES.TASK} component={Task} />
+        <PrivateRoute exact={true} path={ROUTES.TASKS} component={Tasks} />
         <Route exact={true} path={ROUTES.LOGIN} component={Login} />
         <Route exact={true} path={ROUTES.REGISTER} component={Register} />
         <Route component={NotFound} />
