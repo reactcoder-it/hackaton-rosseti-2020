@@ -1,0 +1,35 @@
+.main-layout {
+  height: 100%;
+}
+
+.main-layout .ant-layout {
+  height: 100%;
+}
+
+.main-layout .trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.main-layout .trigger:hover {
+  color: #1890ff;
+}
+
+.main-layout .logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 16px;
+}
+
+.main-layout__header {
+  background: #f0f2f5 !important;
+  padding: 0 !important;
+}
+
+.main-layout__content {
+  background: #ffffff !important;
+  padding: 32px;
+}

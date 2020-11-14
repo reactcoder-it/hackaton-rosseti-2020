@@ -1,0 +1,50 @@
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.user-profile__avatar {
+  margin-top: 8px !important;
+  margin-bottom: 24px !important;
+}
+
+.user-profile__name {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.user-profile__email {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: bold;
+}
+
+.user-profile__group {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.user-profile__logout {
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.65) !important;
+  border-color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.user-profile__logout:hover {
+  color: rgba(255, 255, 255, 1) !important;
+  border-color: rgba(255, 255, 255, 1) !important;
+}
+
+.ant-layout-sider-collapsed .user-profile__name,
+.ant-layout-sider-collapsed .user-profile__email,
+.ant-layout-sider-collapsed .user-profile__group,
+.ant-layout-sider-collapsed .user-profile__logout {
+  display: none;
+}
+
+.ant-layout-sider-collapsed .user-profile__avatar {
+  width: 32px !important;
+  height: 32px !important;
+  line-height: 32px !important;
+  font-size: 16px !important;
+  margin: 0 !important;
+}

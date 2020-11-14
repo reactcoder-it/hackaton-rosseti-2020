@@ -69,31 +69,31 @@ const RegisterForm = () => {
     <div>
       <Form name="register" className="register" onFinish={onFinish}>
         <Form.Item name="firstName" rules={[{ required: true, message: 'Введите ваше имя!' }]}>
-          <Input placeholder="Имя" className="register__input" />
+          <Input size="large" placeholder="Имя" className="register__input" />
         </Form.Item>
         <Form.Item
           name="middleName"
           rules={[{ required: true, message: 'Введите ваше отчество!' }]}
         >
-          <Input placeholder="Отчество" className="register__input" />
+          <Input size="large" placeholder="Отчество" className="register__input" />
         </Form.Item>
         <Form.Item name="lastName" rules={[{ required: true, message: 'Введите вашу фамилию!' }]}>
-          <Input placeholder="Фамилия" className="register__input" />
+          <Input size="large" placeholder="Фамилия" className="register__input" />
         </Form.Item>
         <Form.Item
           name="numberOfEducationGroup"
           rules={[{ required: true, message: 'Введите ваш номер учебной группы!' }]}
         >
-          <Input placeholder="Номер учебной группы" className="register__input" />
+          <Input size="large" placeholder="Номер учебной группы" className="register__input" />
         </Form.Item>
         <Form.Item name="email" rules={[{ required: true, message: 'Введите ваш email!' }]}>
-          <Input placeholder="Email" className="register__input" />
+          <Input size="large" placeholder="Email" className="register__input" />
         </Form.Item>
         <Form.Item name="password" rules={[{ required: true, message: 'Введите пароль!' }]}>
-          <Input.Password placeholder="Пароль" className="register__input" />
+          <Input.Password size="large" placeholder="Пароль" className="register__input" />
         </Form.Item>
         <Form.Item className="register__buttons">
-          <Button className="register__button" type="primary" htmlType="submit">
+          <Button size="large" className="register__button" type="primary" htmlType="submit">
             Зарегистрироваться
           </Button>
         </Form.Item>

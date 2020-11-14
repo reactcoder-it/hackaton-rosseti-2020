@@ -52,13 +52,13 @@ const LoginForm = () => {
     <div>
       <Form name="login" className="login" onFinish={onFinish}>
         <Form.Item name="email" rules={[{ required: true, message: 'Введите ваш email!' }]}>
-          <Input placeholder="Email" className="login__input" />
+          <Input size="large" placeholder="Email" className="login__input" />
         </Form.Item>
         <Form.Item name="password" rules={[{ required: true, message: 'Введите пароль!' }]}>
-          <Input.Password placeholder="Пароль" className="login__input" />
+          <Input.Password size="large" placeholder="Пароль" className="login__input" />
         </Form.Item>
         <Form.Item className="login__buttons">
-          <Button className="login__button" type="primary" htmlType="submit">
+          <Button size="large" className="login__button" type="primary" htmlType="submit">
             Войти
           </Button>
         </Form.Item>

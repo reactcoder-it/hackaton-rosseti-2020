@@ -1,0 +1,13 @@
+.auth-layout {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-layout__container {
+  width: 400px;
+  border: 1px solid #f0f0f0;
+  padding: 32px;
+  border-radius: 4px;
+}
