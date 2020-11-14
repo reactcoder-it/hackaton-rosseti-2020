@@ -1,0 +1,16 @@
+.device {
+  display: inline-flex;
+  position: absolute;
+  z-index: 100;
+}
+
+.device__card .ant-card-head {
+  cursor: move;
+  text-align: center;
+}
+
+.device__card .ant-card-body {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}

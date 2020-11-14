@@ -6,4 +6,5 @@ export const ROUTES = {
   RESULTS: '/results',
   WEBINARS: '/webinars',
   HELP: '/help',
+  TASK: '/task',
 }

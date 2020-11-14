@@ -1,0 +1,17 @@
+.device-selection {
+  display: inline-flex;
+  position: absolute;
+  z-index: 100;
+}
+
+.device-selection__card .ant-card-head {
+  cursor: move;
+}
+
+.device-selection__card .ant-card-body {
+  padding: 0;
+}
+
+.device-selection__menu {
+  border-right: 0 !important;
+}

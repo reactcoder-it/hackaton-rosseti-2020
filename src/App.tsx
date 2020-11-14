@@ -9,12 +9,14 @@ import NotFound from './containers/NotFound'
 import Home from './containers/Home'
 import Login from './containers/Login'
 import Register from './containers/Register'
+import Task from './containers/Task'
 
 function App() {
   return (
     <Router>
       <Switch>
         <PrivateRoute exact={true} path={ROUTES.HOME} component={Home} />
+        <PrivateRoute exact={true} path={ROUTES.TASK} component={Task} />
         <Route exact={true} path={ROUTES.LOGIN} component={Login} />
         <Route exact={true} path={ROUTES.REGISTER} component={Register} />
         <Route component={NotFound} />
